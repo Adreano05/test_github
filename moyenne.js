@@ -22,7 +22,7 @@ rl.question("Combien de notes voulez-vous entrer ? ", (answer) => {
     demanderNote();
 });
 
-// Fonction pour demander les notes une par une
+// Fonction pour demander les notes une par une avec une validation stricte
 function demanderNote(){
     if(compteur < nombreNotes){
         rl.question(`Note ${compteur+1}: `, (noteStr) => {
